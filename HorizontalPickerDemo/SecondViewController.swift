@@ -25,7 +25,7 @@ class SecondViewController: UIViewController, HorizontalPickerViewDataSource, Ho
         horizontalPicker.delegate = self
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         label.text = "\(horizontalPicker.selectedRow())"
     }
@@ -49,7 +49,7 @@ class SecondViewController: UIViewController, HorizontalPickerViewDataSource, Ho
     }
     
     func textColorForHorizontalPickerView(pickerView: HorizontalPickerView) -> UIColor {
-        return UIColor.darkTextColor()
+        return UIColor.darkText
     }
     
     func pickerViewShouldMask(pickerView: HorizontalPickerView) -> Bool {
